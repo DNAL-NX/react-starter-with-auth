@@ -1,0 +1,147 @@
+{
+  "uuid": "5b3cb68c-cc77-47da-824c-8a779cd7a144",
+  "lastMigration": 20,
+  "name": "Bff",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "637257bd-4ba8-4e5b-90e7-a3ffae99832c",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "auth",
+      "responses": [
+        {
+          "uuid": "5b8e0176-aa70-4470-af6f-0732348fd820",
+          "body": "{\n    \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "20439d00-cb4c-47e5-9ce4-982c59bb7e3e",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/coffee",
+      "responses": [
+        {
+          "uuid": "fd887fa3-00a4-4588-9383-55a3a08ff39c",
+          "body": "[\n    {\n        \"id\": 8865,\n        \"uid\": \"029a9b8d-4040-4d4a-84a8-15a85fdfdcfd\",\n        \"blend_name\": \"Cascara Breaker\",\n        \"origin\": \"Gayo, Sumatra\",\n        \"variety\": \"Agaro\",\n        \"notes\": \"dull, tea-like, hay, cream, golden raisin\",\n        \"intensifier\": \"crisp\"\n    },\n    {\n        \"id\": 4576,\n        \"uid\": \"77a63840-7de5-41ae-bc28-1196e645823a\",\n        \"blend_name\": \"Kreb-Full-o Cowboy\",\n        \"origin\": \"Volcan, Panama\",\n        \"variety\": \"Mundo Novo\",\n        \"notes\": \"deep, creamy, honey, lemonade, granola\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 4980,\n        \"uid\": \"029a25ec-f81d-4240-b570-530445dda90f\",\n        \"blend_name\": \"Veranda Level\",\n        \"origin\": \"Apaneca-Ilamatepec, El Salvador\",\n        \"variety\": \"Colombia\",\n        \"notes\": \"dirty, smooth, quakery, snow pea, magnolia\",\n        \"intensifier\": \"delicate\"\n    },\n    {\n        \"id\": 4791,\n        \"uid\": \"7d05f47c-a16b-4fde-8af0-1aa75a74e72b\",\n        \"blend_name\": \"Major Treat\",\n        \"origin\": \"Hidalgo, Mexico\",\n        \"variety\": \"Ennarea\",\n        \"notes\": \"dull, velvety, butter, apricot, passion fruit\",\n        \"intensifier\": \"quick\"\n    },\n    {\n        \"id\": 3022,\n        \"uid\": \"8cde7050-6b95-46ee-89e1-80863b79c24a\",\n        \"blend_name\": \"Seattle Solstice\",\n        \"origin\": \"Pulneys, India\",\n        \"variety\": \"Liberica\",\n        \"notes\": \"pointed, big, sweet pea, tomato, hibiscus\",\n        \"intensifier\": \"vibrant\"\n    },\n    {\n        \"id\": 9424,\n        \"uid\": \"bf1d80e3-1d7d-4e12-ad01-e32a7f431c31\",\n        \"blend_name\": \"Major Bean\",\n        \"origin\": \"Volcan, Panama\",\n        \"variety\": \"Obata\",\n        \"notes\": \"delicate, syrupy, dill, coconut, tomato\",\n        \"intensifier\": \"juicy\"\n    },\n    {\n        \"id\": 9751,\n        \"uid\": \"a57f2fc9-5b15-4672-847c-f184afead3cc\",\n        \"blend_name\": \"Winter Coffee\",\n        \"origin\": \"Madriz, Nicaragua\",\n        \"variety\": \"SL34\",\n        \"notes\": \"soft, full, tomato, honeydew, black-tea\",\n        \"intensifier\": \"astringent\"\n    },\n    {\n        \"id\": 3290,\n        \"uid\": \"795345a8-9e70-410c-b8eb-58ff9d069c78\",\n        \"blend_name\": \"Café Volcano\",\n        \"origin\": \"Copan, Honduras\",\n        \"variety\": \"Obata\",\n        \"notes\": \"dirty, creamy, red currant, black cherry, tamarind\",\n        \"intensifier\": \"dry\"\n    },\n    {\n        \"id\": 3752,\n        \"uid\": \"3560ba0b-b25d-4c13-bb74-04689e000e33\",\n        \"blend_name\": \"Blue Cup\",\n        \"origin\": \"Cacahuatique, El Salvador\",\n        \"variety\": \"Gimma\",\n        \"notes\": \"mild, coating, marzipan, black-tea, sugar cane\",\n        \"intensifier\": \"unbalanced\"\n    },\n    {\n        \"id\": 70,\n        \"uid\": \"e6cd280f-a704-41da-b6cc-d49e41ab78c7\",\n        \"blend_name\": \"Captain's Light\",\n        \"origin\": \"Kayanza, Burundi\",\n        \"variety\": \"Gimma\",\n        \"notes\": \"soft, syrupy, burnt sugar, sage, cashew\",\n        \"intensifier\": \"wild\"\n    },\n    {\n        \"id\": 7838,\n        \"uid\": \"2f01349b-6ef8-4328-b967-d7f02b39dd14\",\n        \"blend_name\": \"Good-morning Java\",\n        \"origin\": \"Chiapas, Mexico\",\n        \"variety\": \"Typica\",\n        \"notes\": \"lingering, slick, mushroom, cocoa powder, barley\",\n        \"intensifier\": \"soft\"\n    },\n    {\n        \"id\": 3195,\n        \"uid\": \"4c00ddfc-d326-402f-a8c0-f002e5e06392\",\n        \"blend_name\": \"Red Choice\",\n        \"origin\": \"Wellega, Ethiopia\",\n        \"variety\": \"SL28\",\n        \"notes\": \"faint, smooth, squash, peach, fresh wood\",\n        \"intensifier\": \"mild\"\n    },\n    {\n        \"id\": 9550,\n        \"uid\": \"27d6a1b1-8433-4988-b4d9-191893f99913\",\n        \"blend_name\": \"Strong Light\",\n        \"origin\": \"Raimi, Yemen\",\n        \"variety\": \"Dega\",\n        \"notes\": \"mild, watery, rubber, black-tea, cream\",\n        \"intensifier\": \"dull\"\n    },\n    {\n        \"id\": 9640,\n        \"uid\": \"b137b9ef-7def-400d-95c3-2460d86679af\",\n        \"blend_name\": \"Strong Select\",\n        \"origin\": \"Volcan, Panama\",\n        \"variety\": \"Kona\",\n        \"notes\": \"dirty, smooth, cranberry, honey, squash\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 1705,\n        \"uid\": \"de39c849-644c-49d4-9aea-f12804293039\",\n        \"blend_name\": \"Street Equinox\",\n        \"origin\": \"Chiriqui, Panama\",\n        \"variety\": \"Agaro\",\n        \"notes\": \"astringent, smooth, black currant, kiwi, maple syrup\",\n        \"intensifier\": \"rounded\"\n    },\n    {\n        \"id\": 6029,\n        \"uid\": \"10493e22-ffaa-4ca9-90e0-38b75393e92b\",\n        \"blend_name\": \"The Equinox\",\n        \"origin\": \"Kabirizi, Rwanda\",\n        \"variety\": \"SL34\",\n        \"notes\": \"dry, creamy, tamarind, nutmeg, corriander\",\n        \"intensifier\": \"tart\"\n    },\n    {\n        \"id\": 1420,\n        \"uid\": \"4c655690-75fd-4ca4-bc1e-8dfe50e699ee\",\n        \"blend_name\": \"Reg's Cowboy\",\n        \"origin\": \"Travancore, India\",\n        \"variety\": \"Bourbon\",\n        \"notes\": \"lingering, smooth, nectarine, graham cracker, sweet pea\",\n        \"intensifier\": \"balanced\"\n    },\n    {\n        \"id\": 9677,\n        \"uid\": \"be09ce40-2d24-4128-8031-662bdde6b5a1\",\n        \"blend_name\": \"Goodbye Equinox\",\n        \"origin\": \"Tapanuli, Sumatra\",\n        \"variety\": \"Geisha\",\n        \"notes\": \"rounded, big, barley, almond, banana\",\n        \"intensifier\": \"complex\"\n    },\n    {\n        \"id\": 8344,\n        \"uid\": \"8f4f2768-f980-4e9c-9f8b-7ec9e3b9ef63\",\n        \"blend_name\": \"Thanksgiving Choice\",\n        \"origin\": \"Kayanza, Burundi\",\n        \"variety\": \"Bourbon\",\n        \"notes\": \"wild, syrupy, apricot, hibiscus, figs\",\n        \"intensifier\": \"quick\"\n    },\n    {\n        \"id\": 467,\n        \"uid\": \"38768fb7-9e1e-4c83-b8b8-9ce8c59f4889\",\n        \"blend_name\": \"Joe Breaker\",\n        \"origin\": \"Kayanza, Burundi\",\n        \"variety\": \"Kona\",\n        \"notes\": \"dense, coating, green grape, bakers chocolate, leathery\",\n        \"intensifier\": \"rounded\"\n    },\n    {\n        \"id\": 4396,\n        \"uid\": \"606d56ef-ed1e-4760-86a4-8b385ea9d776\",\n        \"blend_name\": \"Brooklyn Symphony\",\n        \"origin\": \"Lintong, Sumatra\",\n        \"variety\": \"Mundo Novo\",\n        \"notes\": \"wild, silky, coconut, lemonade, figs\",\n        \"intensifier\": \"vibrant\"\n    },\n    {\n        \"id\": 4858,\n        \"uid\": \"5fe4df6b-4501-44a5-b53a-0936b972450b\",\n        \"blend_name\": \"Red America\",\n        \"origin\": \"Carazo, Nicaragua\",\n        \"variety\": \"Gesha\",\n        \"notes\": \"faint, full, cranberry, banana, carbon\",\n        \"intensifier\": \"soft\"\n    },\n    {\n        \"id\": 2102,\n        \"uid\": \"0ead33d1-d907-40a8-9b96-d3b7dce4531c\",\n        \"blend_name\": \"The Captain's Nuts\",\n        \"origin\": \"Northern Region, Oldeani, Tanzania\",\n        \"variety\": \"Pacas\",\n        \"notes\": \"mild, chewy, cedar, fresh bread, toast\",\n        \"intensifier\": \"bright\"\n    },\n    {\n        \"id\": 9455,\n        \"uid\": \"8a987461-fd64-4568-b86c-c97f466fc190\",\n        \"blend_name\": \"Reg's Cup\",\n        \"origin\": \"Veracruz, Mexico\",\n        \"variety\": \"Agaro\",\n        \"notes\": \"delicate, tea-like, orange creamsicle, red apple, cocoa powder\",\n        \"intensifier\": \"crisp\"\n    },\n    {\n        \"id\": 8769,\n        \"uid\": \"af0abea6-46c1-4db2-be39-13ab20a64499\",\n        \"blend_name\": \"The Captain's Nuts\",\n        \"origin\": \"Comayagua, Honduras\",\n        \"variety\": \"Kaffa\",\n        \"notes\": \"rounded, tea-like, lemon verbena, rye, graham cracker\",\n        \"intensifier\": \"quick\"\n    },\n    {\n        \"id\": 5232,\n        \"uid\": \"75f44089-2f88-47a8-b4f1-0f59a182303e\",\n        \"blend_name\": \"Strong Level\",\n        \"origin\": \"Gimbi, Ethiopia\",\n        \"variety\": \"Obata\",\n        \"notes\": \"balanced, silky, almond, tobacco, cocoa powder\",\n        \"intensifier\": \"dry\"\n    },\n    {\n        \"id\": 4453,\n        \"uid\": \"aec67fec-e530-4fd7-bd36-cc891e2a7629\",\n        \"blend_name\": \"Huggy America\",\n        \"origin\": \"Kigeyo Washing Station, Rwanda\",\n        \"variety\": \"Gimma\",\n        \"notes\": \"dull, full, red grape, watermelon, black pepper\",\n        \"intensifier\": \"quick\"\n    },\n    {\n        \"id\": 2777,\n        \"uid\": \"a886e3ff-34f3-4756-9538-403eab459792\",\n        \"blend_name\": \"Street Delight\",\n        \"origin\": \"Tolima, Colombia\",\n        \"variety\": \"Agaro\",\n        \"notes\": \"bright, slick, cashew, coconut, rubber\",\n        \"intensifier\": \"dull\"\n    },\n    {\n        \"id\": 7801,\n        \"uid\": \"efe3c726-dd23-470f-9490-772e87a8ee4a\",\n        \"blend_name\": \"Hello Bean\",\n        \"origin\": \"Colima, Mexico\",\n        \"variety\": \"Pacas\",\n        \"notes\": \"mild, tea-like, marshmallow, magnolia, dill\",\n        \"intensifier\": \"rounded\"\n    },\n    {\n        \"id\": 2920,\n        \"uid\": \"6e2a9b90-d2b6-4f00-8cfb-0712cd60dc9f\",\n        \"blend_name\": \"Brooklyn Mug\",\n        \"origin\": \"Tecapa-Chinameca, El Salvador\",\n        \"variety\": \"Villalobos\",\n        \"notes\": \"mild, chewy, lychee, cola, graham cracker\",\n        \"intensifier\": \"complex\"\n    },\n    {\n        \"id\": 6108,\n        \"uid\": \"13cd2f70-5f07-4ae2-9c6a-57f248556b18\",\n        \"blend_name\": \"Veranda Town\",\n        \"origin\": \"Kayanza, Burundi\",\n        \"variety\": \"Caturra\",\n        \"notes\": \"lingering, smooth, banana, orange, green-tea\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 7861,\n        \"uid\": \"95e2b6b1-fda4-41ff-a7cf-259bdb43594c\",\n        \"blend_name\": \"Blue Mug\",\n        \"origin\": \"Gishamwana Coffee Island, Rwanda\",\n        \"variety\": \"Mokka\",\n        \"notes\": \"wild, chewy, papaya, dill, cranberry\",\n        \"intensifier\": \"delicate\"\n    },\n    {\n        \"id\": 7065,\n        \"uid\": \"05d013d9-d0de-45ac-9283-0a594f9802e1\",\n        \"blend_name\": \"Reg's Cake\",\n        \"origin\": \"San Marcos, Guatemala\",\n        \"variety\": \"San Ramon\",\n        \"notes\": \"dirty, syrupy, coconut, figs, smokey\",\n        \"intensifier\": \"clean\"\n    },\n    {\n        \"id\": 9880,\n        \"uid\": \"5d65727b-a8ef-42c2-bab7-60c4baeeefbf\",\n        \"blend_name\": \"Good-morning Cup\",\n        \"origin\": \"Cerrado, Brazil\",\n        \"variety\": \"Dega\",\n        \"notes\": \"structured, creamy, potato defect!, honey, figs\",\n        \"intensifier\": \"wild\"\n    },\n    {\n        \"id\": 2284,\n        \"uid\": \"c8a92452-18c5-43b8-88fc-ddb71bb287e1\",\n        \"blend_name\": \"Joe Town\",\n        \"origin\": \"Montecillos, Honduras\",\n        \"variety\": \"Java\",\n        \"notes\": \"mild, silky, corriander, concord grape, mandarin\",\n        \"intensifier\": \"wild\"\n    },\n    {\n        \"id\": 6759,\n        \"uid\": \"ce1b9736-d5c1-400c-8c7f-6e45789416c2\",\n        \"blend_name\": \"Joe Pie\",\n        \"origin\": \"Harrar, Ethiopia\",\n        \"variety\": \"Yellow Bourbon\",\n        \"notes\": \"faint, big, hay, graham cracker, raspberry\",\n        \"intensifier\": \"astringent\"\n    },\n    {\n        \"id\": 7643,\n        \"uid\": \"30f212d4-ec07-4d3c-84d9-0023629de533\",\n        \"blend_name\": \"Evening Been\",\n        \"origin\": \"San'ani, Yemen\",\n        \"variety\": \"Ennarea\",\n        \"notes\": \"rounded, creamy, coconut, fresh bread, nutella\",\n        \"intensifier\": \"clean\"\n    },\n    {\n        \"id\": 8010,\n        \"uid\": \"d35efb0b-2406-40ef-bc81-83734b25e2a1\",\n        \"blend_name\": \"Cascara Level\",\n        \"origin\": \"Chiriqui, Panama\",\n        \"variety\": \"Kaffa\",\n        \"notes\": \"vibrant, chewy, tomato, rye, cranberry\",\n        \"intensifier\": \"faint\"\n    },\n    {\n        \"id\": 8919,\n        \"uid\": \"94477b46-a440-43ba-a4eb-95d97ddba3ce\",\n        \"blend_name\": \"Red Select\",\n        \"origin\": \"Nayarit, Mexico\",\n        \"variety\": \"Red Bourbon\",\n        \"notes\": \"bright, syrupy, lychee, orange, ginger\",\n        \"intensifier\": \"vibrant\"\n    },\n    {\n        \"id\": 1676,\n        \"uid\": \"eefb446f-75ec-469d-aa32-35cf416085bf\",\n        \"blend_name\": \"Blacktop Symphony\",\n        \"origin\": \"Boquete, Panama\",\n        \"variety\": \"Bourbon\",\n        \"notes\": \"balanced, slick, black pepper, hibiscus, almond\",\n        \"intensifier\": \"soft\"\n    },\n    {\n        \"id\": 974,\n        \"uid\": \"a3e13f70-17cb-462b-a070-dc4ea7e167e7\",\n        \"blend_name\": \"Street Coffee\",\n        \"origin\": \"Mount Elgon, Uganda\",\n        \"variety\": \"Liberica\",\n        \"notes\": \"muted, round, quakery, rye, grapefruit\",\n        \"intensifier\": \"astringent\"\n    },\n    {\n        \"id\": 4673,\n        \"uid\": \"f5954a3b-7289-49f8-b4e6-33d958c911b8\",\n        \"blend_name\": \"Spilt Equinox\",\n        \"origin\": \"Boquete, Panama\",\n        \"variety\": \"Catuai\",\n        \"notes\": \"astringent, silky, fresh bread, potato defect!, walnut\",\n        \"intensifier\": \"delicate\"\n    },\n    {\n        \"id\": 9047,\n        \"uid\": \"7719128c-61ec-460f-ba66-e6283f528e9d\",\n        \"blend_name\": \"Veranda Coffee\",\n        \"origin\": \"Mount Elgon, Uganda\",\n        \"variety\": \"Blue Mountain\",\n        \"notes\": \"vibrant, silky, orange blossom, quakery, hazelnut\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 7331,\n        \"uid\": \"beb32d79-0faa-4410-9e94-f68bea125761\",\n        \"blend_name\": \"Red Look\",\n        \"origin\": \"Estelí, Nicaragua\",\n        \"variety\": \"Pacamara\",\n        \"notes\": \"lingering, velvety, molasses, banana, fresh wood\",\n        \"intensifier\": \"juicy\"\n    },\n    {\n        \"id\": 4698,\n        \"uid\": \"8dc79cf0-674a-47a7-81a1-c7a4e0af373d\",\n        \"blend_name\": \"KrebStar Delight\",\n        \"origin\": \"Mount Elgon, Uganda\",\n        \"variety\": \"Mokka\",\n        \"notes\": \"sharp, silky, milk chocolate, white grape, brown sugar\",\n        \"intensifier\": \"dry\"\n    },\n    {\n        \"id\": 8438,\n        \"uid\": \"c92da729-8eb6-4422-a024-6ab4d4b58bde\",\n        \"blend_name\": \"Express Choice\",\n        \"origin\": \"Boyacá, Colombia\",\n        \"variety\": \"Caturra\",\n        \"notes\": \"juicy, coating, cranberry, nutella, sugar cane\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 6727,\n        \"uid\": \"7986bc0c-10a5-4bef-98a1-7d2404ac3c48\",\n        \"blend_name\": \"Captain's Utopia\",\n        \"origin\": \"El Paraiso, Honduras\",\n        \"variety\": \"Bourbon\",\n        \"notes\": \"complex, tea-like, jasmine, butter, leathery\",\n        \"intensifier\": \"vibrant\"\n    },\n    {\n        \"id\": 5440,\n        \"uid\": \"925b4441-40c3-449a-901e-06beb8db96d0\",\n        \"blend_name\": \"Thanksgiving Equinox\",\n        \"origin\": \"Chikmagalur, India\",\n        \"variety\": \"Yellow Bourbon\",\n        \"notes\": \"pointed, slick, orange creamsicle, potato defect!, carmel\",\n        \"intensifier\": \"vibrant\"\n    },\n    {\n        \"id\": 2876,\n        \"uid\": \"7ac40bdc-8cdc-404e-b0e2-ea89faefd38f\",\n        \"blend_name\": \"Pumpkin-spice Forrester\",\n        \"origin\": \"Volcan, Panama\",\n        \"variety\": \"Villalobos\",\n        \"notes\": \"complex, full, cream, marshmallow, burnt sugar\",\n        \"intensifier\": \"sharp\"\n    },\n    {\n        \"id\": 9301,\n        \"uid\": \"cf8209bb-b9d2-4109-8970-04d29ce7ed46\",\n        \"blend_name\": \"Hello Solstice\",\n        \"origin\": \"San Luis Potosi, Mexico\",\n        \"variety\": \"Obata\",\n        \"notes\": \"mild, silky, leathery, pecan, honeydew\",\n        \"intensifier\": \"soft\"\n    }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "42723bb2-38ed-40c0-b6cc-5533cb4d3914",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "protected",
+      "responses": [
+        {
+          "uuid": "2fb0f03e-9624-4984-b413-c986e3a93ae1",
+          "body": "{\n    \"id\": 748,\n    \"uid\": \"1e01a518-6d60-40f2-9d31-0e051fa00aa4\",\n    \"first_name\": \"Sage\",\n    \"last_name\": \"Howe\",\n    \"username\": \"sage.howe\",\n    \"email\": \"sage.howe@email.com\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
